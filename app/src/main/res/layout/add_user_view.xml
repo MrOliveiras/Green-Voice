@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CADASTRO"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+    />
+
+    <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome Completo"
+    />
+
+    <EditText
+            android:id="@+id/etNomDeUsuario1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuário"
+    />
+
+    <EditText
+            android:id="@+id/etTelefoneDoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Telefone"
+    />
+
+    <EditText
+            android:id="@+id/etEmailDoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail"
+    />
+
+    <Button
+            android:id="@+id/botaoCadastrarUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadatrar"
+    />
+
+</LinearLayout>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -215,5 +216,91 @@
         </android.support.v7.widget.CardView>
 
     </GridLayout>
+=======
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="300dp"
+        android:layout_height="189dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/green_voice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="O poder da fiscalizão na sua mão" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuário:" />
+
+    <EditText
+        android:id="@+id/etNomeDeUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuário, telefone ou e-mail"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha:" />
+
+    <EditText
+        android:id="@+id/etSenhaDeUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="********"
+        android:textSize="18dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esqueceu a senha? Click aqui." />
+
+    <Button
+        android:id="@+id/btEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Entrar"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/TxCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ainda não tem conta? Cadastre-se"
+        android:textSize="18dp"
+        android:padding="10dp"/>
+
+
+
+    <Button
+        android:id="@+id/btAnonimo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modo Anônimo"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Garante sigilo de seus dados." />
+>>>>>>> 877bbba44308fc4e9feac97bd21481a1ae0c7db5
 
 </LinearLayout>

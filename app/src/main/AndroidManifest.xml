@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.android.myapplication" >
+=======
+    package="com.example.greenvoice" >
+>>>>>>> 877bbba44308fc4e9feac97bd21481a1ae0c7db5
 
     <application
         android:allowBackup="true"
@@ -9,6 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+<<<<<<< HEAD
+=======
+
+>>>>>>> 877bbba44308fc4e9feac97bd21481a1ae0c7db5
         <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +24,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+=======
+        <activity android:name=".AddUserActivity" />
+        <activity android:name=".AddOcorrenciaActivity" />
+        <activity android:name=".ListaDeOcorrenciasActivity" />
+        <activity android:name=".ActivityAnonimo" />
+
+>>>>>>> 877bbba44308fc4e9feac97bd21481a1ae0c7db5
     </application>
 
 </manifest>

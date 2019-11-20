@@ -3,8 +3,13 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
+<<<<<<< HEAD
         applicationId "com.android.myapplication"
         minSdkVersion 26
+=======
+        applicationId "com.aula"
+        minSdkVersion 23
+>>>>>>> 877bbba44308fc4e9feac97bd21481a1ae0c7db5
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -21,9 +26,16 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
+<<<<<<< HEAD
     implementation 'com.android.support:cardview-v7:28.0.0'
+=======
+>>>>>>> 877bbba44308fc4e9feac97bd21481a1ae0c7db5
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+<<<<<<< HEAD
+=======
+    implementation 'com.android.support:design:28.0.0'
+>>>>>>> 877bbba44308fc4e9feac97bd21481a1ae0c7db5
 }
