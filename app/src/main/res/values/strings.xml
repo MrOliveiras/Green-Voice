@@ -1,7 +1,8 @@
 <resources>
-<<<<<<< HEAD
-    <string name="app_name">My Application</string>
-=======
     <string name="app_name">GreenVoice</string>
->>>>>>> 877bbba44308fc4e9feac97bd21481a1ae0c7db5
+
+    <string-array name="categorias">
+        <item>Queimada</item>
+        <item>Lixo</item>
+    </string-array>
 </resources>
