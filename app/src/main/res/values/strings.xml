@@ -2,7 +2,19 @@
     <string name="app_name">GreenVoice</string>
 
     <string-array name="categorias">
+        <item>Captura ou comércio ilegal de peixes</item>
+        <item>Comércio ilegal de madeira</item>
+        <item>Corte ou poda de árvore sem autorização</item>
+        <item>Crime contra a fauna</item>
+        <item>Descarte irregular de resíduos</item>
+        <item>Desmatamento</item>
+        <item>Empreendimento poluidor</item>
+        <item>Extração de recursos minerais</item>
+        <item>Invasão de áreas protegidas</item>
+        <item>Poluição da água</item>
+        <item>Poluição do ar</item>
+        <item>Poluição sonora</item>
         <item>Queimada</item>
-        <item>Lixo</item>
+        <item>Usina de carvão</item>
     </string-array>
 </resources>
