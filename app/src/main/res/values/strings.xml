@@ -17,4 +17,8 @@
         <item>Queimada</item>
         <item>Usina de carvão</item>
     </string-array>
+
+    <string name="link_repositorio">
+        <a href="https://github.com/MrOliveiras/Green-Voice">https://github.com/MrOliveiras/Green-Voice</a>
+    </string>
 </resources>
