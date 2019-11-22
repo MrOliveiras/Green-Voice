@@ -43,7 +43,7 @@ public class ActivityOpcao  extends AppCompatActivity {
         cvContate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ActivityOpcao.this, Activity_contate.class);
+                Intent i = new Intent(ActivityOpcao.this, ActivityContate.class);
                 startActivity(i);
             }
         });

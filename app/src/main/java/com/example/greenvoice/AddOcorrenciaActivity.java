@@ -20,6 +20,8 @@ public class AddOcorrenciaActivity extends AppCompatActivity implements OnItemSe
     private static final int PERMISSION_CODE = 1001;
 
     private Spinner sp;
+
+
     private ImageView imagem_evidencia;
     private Button botao_escolher_imagem;
     private Button botao_enviar_denuncia;
@@ -30,14 +32,19 @@ public class AddOcorrenciaActivity extends AppCompatActivity implements OnItemSe
         setContentView(R.layout.add_ocorrencia);
 
         sp = (Spinner)findViewById(R.id.spinner_categorias);
+
+
         imagem_evidencia = findViewById(R.id.imagem_evidência);
         botao_escolher_imagem = findViewById(R.id.botaoEscolherImagem);
         botao_enviar_denuncia = findViewById(R.id.botaoEnviarDenuncia);
+
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.categorias, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sp.setAdapter(adapter);
-
         sp.setOnItemSelectedListener(this);
+
+
+
 
         botao_escolher_imagem.setOnClickListener(new View.OnClickListener() {
             @Override

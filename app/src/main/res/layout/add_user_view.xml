@@ -7,11 +7,21 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CADASTRO DE USUÁRIO"
+            android:text="Cadastro"
             android:textSize="30dp"
             android:layout_gravity="center"
             android:padding="25dp"
     />
+
+    <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cadastro"
+            android:layout_gravity="center_horizontal"
+    />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,7 +34,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ex. João Silva"
+            android:background="@drawable/edit_text_shape"
+            android:padding="10dp"
     />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +52,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ex. joaosilva2019"
+            android:background="@drawable/edit_text_shape"
+            android:padding="10dp"
     />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,8 +70,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
-            android:hint="(82)9.9999-9999"
+            android:hint="Ex.(82)9.9999-9999"
+            android:background="@drawable/edit_text_shape"
+            android:padding="10dp"
     />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,14 +89,43 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:hint="Ex. joaosilva2019@gmail.com"
+            android:background="@drawable/edit_text_shape"
+            android:padding="10dp"
     />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senha:"
+            android:textSize="15dp"
+    />
+
+
+    <EditText
+            android:id="@+id/senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Insira uma senha"
+            android:background="@drawable/edit_text_shape"
+            android:padding="10dp"
+    />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
 
     <Button
             android:id="@+id/botaoCadastrarUsuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cadatrar"
+            android:text="Cadastrar"
             android:layout_gravity="center"
+            android:textColor="#18434C"
+            android:textSize="23sp"
+            android:layout_width="226dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonshape"
     />
+
 
 </LinearLayout>

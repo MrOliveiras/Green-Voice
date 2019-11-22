@@ -46,6 +46,7 @@
                 android:hint="Dê um nome para a denúncia"
                 android:textSize="18dp"
                 android:padding="10dp"
+                android:background="@drawable/edit_text_shape"
                 />
 
         <TextView
@@ -54,14 +55,16 @@
                 android:text="Descrição:" />
 
         <EditText
-                android:id="@+id/etDescricaoDenuncia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textCapSentences|textMultiLine"
-                android:hint="Dê um nome para a denúncia"
-                android:textSize="18dp"
-                android:padding="10dp"
-                />
+            android:id="@+id/etDescricaoDenuncia"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:hint="Dê um nome para a denúncia"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:gravity="top"
+            android:background="@drawable/edit_text_shape"
+            />
 
         <TextView
                 android:layout_width="wrap_content"
@@ -75,6 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
+                android:background="@drawable/edit_text_shape"
                 />
 
         <View
@@ -92,8 +96,12 @@
         <Button
                 android:id="@+id/botaoEscolherImagem"
                 android:text="Escolher imagem"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:textColor="#18434C"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="58dp"
+                android:background="@drawable/buttonshape"/>
 
         <View
                 android:layout_width="match_parent"
@@ -120,14 +128,20 @@
                     android:hint="CEP"
                     android:textSize="18dp"
                     android:layout_weight="4"
+                    android:padding="10dp"
+                    android:background="@drawable/edit_text_shape"
                     />
 
             <Button
                     android:id="@+id/botao_cep"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="226dp"
+                    android:layout_height="38dp"
                     android:text="Buscar"
                     android:layout_weight="8"
+                    android:textColor="#18434C"
+                    android:textSize="15sp"
+                    android:background="@drawable/buttonshape"
+
                     />
 
         </LinearLayout>
@@ -139,6 +153,7 @@
                 android:hint="Rua"
                 android:textSize="18dp"
                 android:padding="10dp"
+                android:background="@drawable/edit_text_shape"
                 />
 
         <EditText
@@ -148,6 +163,7 @@
                 android:hint="Cidade"
                 android:textSize="18dp"
                 android:padding="10dp"
+                android:background="@drawable/edit_text_shape"
                 />
 
         <EditText
@@ -157,6 +173,7 @@
                 android:hint="UF"
                 android:textSize="18dp"
                 android:padding="10dp"
+                android:background="@drawable/edit_text_shape"
                 />
 
         <View
@@ -167,7 +184,11 @@
                 android:id="@+id/botaoEnviarDenuncia"
                 android:text="Enviar denúncia"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textColor="#18434C"
+                android:textSize="23sp"
+                android:background="@drawable/buttonshape"
+        />
 
     </LinearLayout>
 
