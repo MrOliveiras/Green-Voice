@@ -13,11 +13,7 @@ public class ConexaoOcorrencia extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String sql = "CREATE TABLE OCORRENCIA (ID INTEGER PRIMARY KEY, TITULO TEXT NOT NULL, DESCRICAO TEXT, TIPO TEXT," +
-<<<<<<< HEAD
                 " IMG_DA_OCORRENCIA TEXT, CEP TEXT, RUA TEXT, CIDADE TEXT, UF TEXT, DATA TEXT, HORA TEXT);";
-=======
-                " IMG_DA_OCORRENCIA TEXT, CEP TEXT, RUA TEXT, CIDADE TEXT, UF TEXT);";
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
         db.execSQL(sql);
     }
     @Override

@@ -4,11 +4,7 @@ import java.io.Serializable;
 
 public class Usuario implements Serializable {
 
-<<<<<<< HEAD
     private String nomeCompleto;
-=======
-    private String NomeCompleto;
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
     private int codUsuario;
     private String user;
     private String telefone;
@@ -17,19 +13,11 @@ public class Usuario implements Serializable {
 
 
     public String getNomeCompleto() {
-<<<<<<< HEAD
         return nomeCompleto;
     }
 
     public void setNomeCompleto(String nomeCompleto) {
         nomeCompleto = nomeCompleto;
-=======
-        return NomeCompleto;
-    }
-
-    public void setNomeCompleto(String nomeCompleto) {
-        NomeCompleto = nomeCompleto;
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
     }
 
     public int getCodUsuario() {
@@ -73,11 +61,7 @@ public class Usuario implements Serializable {
     }
 
     public Usuario(String nomeCompleto, int codUsuario, String user, String telefone, String email, String senha) {
-<<<<<<< HEAD
         this.nomeCompleto = nomeCompleto;
-=======
-        NomeCompleto = nomeCompleto;
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
         this.codUsuario = codUsuario;
         this.user = user;
         this.telefone = telefone;
@@ -88,11 +72,7 @@ public class Usuario implements Serializable {
     @Override
     public String toString() {
         return "Usuario{" +
-<<<<<<< HEAD
                 "NomeCompleto='" + nomeCompleto + '\'' +
-=======
-                "NomeCompleto='" + NomeCompleto + '\'' +
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
                 ", codUsuario=" + codUsuario +
                 ", user='" + user + '\'' +
                 ", telefone='" + telefone + '\'' +

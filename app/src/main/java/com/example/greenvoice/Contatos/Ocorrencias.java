@@ -7,21 +7,14 @@ public class Ocorrencias implements Serializable {
     private String titulo;
     private String cod_da_ocorrencia;
     private String descricao;
-<<<<<<< HEAD
     private String categoria_da_ocorrencia;
-=======
-    private String tipo_de_ocorrencia;
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
     private String img_da_ocorrencia;
     private String cep;
     private String rua;
     private String cidade;
     private String uf;
-<<<<<<< HEAD
     private String data;
     private String hora;
-=======
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
 
     public String getCod_da_ocorrencia() {
         return cod_da_ocorrencia;
@@ -47,21 +40,12 @@ public class Ocorrencias implements Serializable {
         this.descricao = descricao;
     }
 
-<<<<<<< HEAD
     public String getCategoria_da_ocorrencia() {
         return categoria_da_ocorrencia;
     }
 
     public void setCategoria_da_ocorrencia(String categoria_da_ocorrencia) {
         this.categoria_da_ocorrencia = categoria_da_ocorrencia;
-=======
-    public String getTipo_de_ocorrencia() {
-        return tipo_de_ocorrencia;
-    }
-
-    public void setTipo_de_ocorrencia(String tipo_de_ocorrencia) {
-        this.tipo_de_ocorrencia = tipo_de_ocorrencia;
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
     }
 
     public String getImg_da_ocorrencia() {
@@ -104,7 +88,6 @@ public class Ocorrencias implements Serializable {
         this.uf = uf;
     }
 
-<<<<<<< HEAD
     public String getData() { return data; }
 
     public void setData(String data) { this.data = data; }
@@ -118,23 +101,13 @@ public class Ocorrencias implements Serializable {
         this.cod_da_ocorrencia = cod_da_ocorrencia;
         this.descricao = descricao;
         this.categoria_da_ocorrencia = categoria_da_ocorrencia;
-=======
-    public Ocorrencias(String titulo, String cod_da_ocorrencia, String descricao, String tipo_de_ocorrencia, String img_da_ocorrencia, String cep, String rua, String cidade, String uf) {
-        this.titulo = titulo;
-        this.cod_da_ocorrencia = cod_da_ocorrencia;
-        this.descricao = descricao;
-        this.tipo_de_ocorrencia = tipo_de_ocorrencia;
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
         this.img_da_ocorrencia = img_da_ocorrencia;
         this.cep = cep;
         this.rua = rua;
         this.cidade = cidade;
         this.uf = uf;
-<<<<<<< HEAD
         this.data = data;
         this.hora = hora;
-=======
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
     }
 
     @Override
@@ -143,21 +116,14 @@ public class Ocorrencias implements Serializable {
                 "titulo='" + titulo + '\'' +
                 ", cod_da_ocorrencia='" + cod_da_ocorrencia + '\'' +
                 ", descricao='" + descricao + '\'' +
-<<<<<<< HEAD
                 ", categoria_da_ocorrencia='" + categoria_da_ocorrencia + '\'' +
-=======
-                ", tipo_de_ocorrencia='" + tipo_de_ocorrencia + '\'' +
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
                 ", img_da_ocorrencia='" + img_da_ocorrencia + '\'' +
                 ", cep='" + cep + '\'' +
                 ", rua='" + rua + '\'' +
                 ", cidade='" + cidade + '\'' +
                 ", uf='" + uf + '\'' +
-<<<<<<< HEAD
                 ", data='" + data + '\'' +
                 ", hora='" + hora + '\'' +
-=======
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
                 '}';
     }
 }

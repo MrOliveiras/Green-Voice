@@ -8,13 +8,9 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="vertical"
             android:layout_width="match_parent"
-<<<<<<< HEAD
             android:layout_height="match_parent"
             android:padding="8dp"
             >
-=======
-            android:layout_height="match_parent">
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
 
         <View
                 android:layout_width="match_parent"
