@@ -187,6 +187,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="25dp"/>
 
+<<<<<<< HEAD
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -225,6 +226,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="25dp"/>
 
+=======
+>>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
         <Button
                 android:id="@+id/botaoEnviarDenuncia"
                 android:text="Enviar denúncia"

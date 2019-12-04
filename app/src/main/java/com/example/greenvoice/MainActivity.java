@@ -1,17 +1,11 @@
-package com.example.greenvoice.Telas;
+package com.example.greenvoice;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-<<<<<<< HEAD
-import android.widget.Toast;
-
-=======
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.greenvoice.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,19 +16,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         Button bt = findViewById(R.id.btEntrar);
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                  Intent intent = new Intent(MainActivity.this, ActivityOpcao.class);
                  startActivity(intent);
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
             }
         });
 
@@ -53,12 +40,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ActivityOpcao.class);
                 startActivity(intent);
-<<<<<<< HEAD
-
-                Toast.makeText(MainActivity.this,  "O modo anônimo não permite o acompanhamento da denúncia!!", Toast.LENGTH_SHORT).show();
-
-=======
->>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
             }
         });
     }

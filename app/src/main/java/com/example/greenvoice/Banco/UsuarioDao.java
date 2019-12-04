@@ -22,6 +22,15 @@ public class UsuarioDao {
         db.close();
     }
 
+<<<<<<< HEAD
+=======
+    public void remover(Usuario usuario) {
+        SQLiteDatabase db = conn.getWritableDatabase();
+        String[] param = {String.valueOf(usuario.getCodUsuario())};
+        db.delete(TABLE,"id = ?",param);
+        db.close();
+    }
+>>>>>>> 00f5dd96318d55e41a3a63799903dfe03d105dfd
 
     public void atualizar(Usuario usuario) {
         SQLiteDatabase db = conn.getWritableDatabase();
