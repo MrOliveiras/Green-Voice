@@ -2,6 +2,7 @@ package com.example.greenvoice.Telas;
 
 
 import android.Manifest;
+<<<<<<< HEAD
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -10,12 +11,19 @@ import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+=======
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.os.Bundle;
+>>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
 import android.view.View;
 import android.widget.*;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+<<<<<<< HEAD
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
@@ -27,12 +35,17 @@ import com.example.greenvoice.R;
 import com.example.greenvoice.services.ConsultaCepTask;
 
 import java.io.File;
+=======
+import androidx.appcompat.app.AppCompatActivity;
+import com.example.greenvoice.R;
+>>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
 
 public class AddOcorrenciaActivity extends AppCompatActivity implements OnItemSelectedListener {
 
     private static final int IMAGE_PICK_CODE = 1000;
     private static final int PERMISSION_CODE = 1001;
 
+<<<<<<< HEAD
     private String caminhoFoto;
     public static final int REQUEST_CODE_CAMERA = 123;
 
@@ -45,10 +58,15 @@ public class AddOcorrenciaActivity extends AppCompatActivity implements OnItemSe
     private EditText etUf;
     private EditText etData;
     private EditText etHora;
+=======
+    private Spinner sp;
+
+>>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
 
     private ImageView imagem_evidencia;
     private Button botao_escolher_imagem;
     private Button botao_enviar_denuncia;
+<<<<<<< HEAD
     private Button botao_cep;
 
     private AlertDialog galeria_ou_camera;
@@ -56,6 +74,8 @@ public class AddOcorrenciaActivity extends AppCompatActivity implements OnItemSe
     private int x = 0;
 
     private Ocorrencias ocorrencias;
+=======
+>>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
 
     @Override
     protected void onCreate(Bundle a) {
@@ -65,9 +85,14 @@ public class AddOcorrenciaActivity extends AppCompatActivity implements OnItemSe
         sp = (Spinner)findViewById(R.id.spinner_categorias);
 
 
+<<<<<<< HEAD
         imagem_evidencia = findViewById(R.id.imagem_evidencia);
         botao_escolher_imagem = findViewById(R.id.botaoEscolherImagem);
         botao_cep = findViewById(R.id.botao_cep);
+=======
+        imagem_evidencia = findViewById(R.id.imagem_evidência);
+        botao_escolher_imagem = findViewById(R.id.botaoEscolherImagem);
+>>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
         botao_enviar_denuncia = findViewById(R.id.botaoEnviarDenuncia);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.categorias, android.R.layout.simple_spinner_item);
@@ -75,6 +100,7 @@ public class AddOcorrenciaActivity extends AppCompatActivity implements OnItemSe
         sp.setAdapter(adapter);
         sp.setOnItemSelectedListener(this);
 
+<<<<<<< HEAD
         botao_escolher_imagem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -171,6 +197,35 @@ public class AddOcorrenciaActivity extends AppCompatActivity implements OnItemSe
             }
         });
 
+=======
+
+
+
+        botao_escolher_imagem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
+                            == PackageManager.PERMISSION_DENIED) {
+                        String[] permissions = {Manifest.permission.READ_EXTERNAL_STORAGE};
+                        requestPermissions(permissions, PERMISSION_CODE);
+                    } else {
+                        pickImageFromGallery();
+                    }
+                } else {
+                    pickImageFromGallery();
+                }
+            }
+        });
+
+        botao_enviar_denuncia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AddOcorrenciaActivity.this, ListaDeOcorrenciasActivity.class);
+                startActivity(intent);
+            }
+        });
+>>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
     }
 
     private void pickImageFromGallery() {
@@ -194,6 +249,7 @@ public class AddOcorrenciaActivity extends AppCompatActivity implements OnItemSe
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+<<<<<<< HEAD
         super.onActivityResult(requestCode, resultCode, data);
         if (x == 1) {
             if (resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE) {
@@ -201,6 +257,10 @@ public class AddOcorrenciaActivity extends AppCompatActivity implements OnItemSe
             }
         } else if (x == 2) {
             setImage(caminhoFoto);
+=======
+        if (resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE) {
+            imagem_evidencia.setImageURI(data.getData());
+>>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
         }
     }
 
@@ -214,6 +274,7 @@ public class AddOcorrenciaActivity extends AppCompatActivity implements OnItemSe
     public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
+<<<<<<< HEAD
 
     private void galeriaOuCamera() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -260,4 +321,6 @@ public class AddOcorrenciaActivity extends AppCompatActivity implements OnItemSe
         imageView.setTag(foto);
     }
 
+=======
+>>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
 }

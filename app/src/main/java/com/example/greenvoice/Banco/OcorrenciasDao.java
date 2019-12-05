@@ -43,8 +43,12 @@ public class OcorrenciasDao {
 
             dadosDaOcorrencia.put("TITULO", ocorrencias.getTitulo());
             dadosDaOcorrencia.put("DESCRICAO", ocorrencias.getDescricao());
+<<<<<<< HEAD
             dadosDaOcorrencia.put("POSITION_TIPO", ocorrencias.getPosition_categoria_da_ocorrencia());
             dadosDaOcorrencia.put("TIPO", ocorrencias.getCategoria_da_ocorrencia());
+=======
+            dadosDaOcorrencia.put("TIPO_DE_OCORRENCIA", ocorrencias.getTipo_de_ocorrencia());
+>>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
             dadosDaOcorrencia.put("IMG_DA_OCORRENCIA", ocorrencias.getImg_da_ocorrencia());
             dadosDaOcorrencia.put("CIDADE", ocorrencias.getCidade());
             dadosDaOcorrencia.put("UF", ocorrencias.getUf());
