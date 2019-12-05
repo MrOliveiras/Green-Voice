@@ -58,6 +58,7 @@ public class ActivityOpcao  extends AppCompatActivity {
             }
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         CardView cvMod = findViewById(R.id.cvMod);
         cvMod.setOnClickListener(new View.OnClickListener() {
@@ -67,6 +68,8 @@ public class ActivityOpcao  extends AppCompatActivity {
                 startActivity(i);
             }
         });
+=======
+>>>>>>> 10a4d81ddd268d71c3c395eab72e3b94bfdd4abb
 =======
 >>>>>>> 10a4d81ddd268d71c3c395eab72e3b94bfdd4abb
     }

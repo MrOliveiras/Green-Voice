@@ -222,6 +222,7 @@
         </androidx.cardview.widget.CardView>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         <androidx.cardview.widget.CardView
                 android:id="@+id/cvMod"
                 android:layout_width="0dp"
@@ -259,6 +260,8 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+=======
+>>>>>>> 10a4d81ddd268d71c3c395eab72e3b94bfdd4abb
 =======
 >>>>>>> 10a4d81ddd268d71c3c395eab72e3b94bfdd4abb
     </GridLayout>
