@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp" >
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modificar dados"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome Completo:"
+                android:textSize="15dp"
+                />
+
+        <EditText
+                android:id="@+id/etNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                />
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuário:"
+                android:textSize="15dp"
+                />
+        <EditText
+                android:id="@+id/etNomeDeUsuario1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                />
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone:"
+                android:textSize="15dp"
+                />
+
+        <EditText
+                android:id="@+id/etTelefoneDoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail:"
+                android:textSize="15dp"
+                />
+
+        <EditText
+                android:id="@+id/etEmailDoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senha:"
+                android:textSize="15dp"
+                />
+
+        <EditText
+                android:id="@+id/etSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+
+        <Button
+                android:id="@+id/botaoCadastrarUsuario"
+                android:text="ATUALIZAR"
+                android:layout_gravity="center"
+                android:textColor="#18434C"
+                android:textSize="23sp"
+                android:layout_width="226dp"
+                android:layout_height="50dp"
+                android:background="@drawable/buttonshape"
+                />
+
+    </LinearLayout>
+</ScrollView>
