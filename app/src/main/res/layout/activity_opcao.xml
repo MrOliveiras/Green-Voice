@@ -221,6 +221,49 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <androidx.cardview.widget.CardView
+                android:id="@+id/cvMod"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/eng"
+                        android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modifique"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+=======
+>>>>>>> 10a4d81ddd268d71c3c395eab72e3b94bfdd4abb
+=======
+>>>>>>> 10a4d81ddd268d71c3c395eab72e3b94bfdd4abb
     </GridLayout>
 
 

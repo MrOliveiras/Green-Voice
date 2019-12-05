@@ -27,6 +27,13 @@
         <activity android:name=".Telas.Activity_opcao_ma" />
         <activity android:name=".Telas.ActivitySobre" />
         <activity android:name=".Telas.ActivityContate" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <activity android:name=".Telas.ActivityMod"/>
+=======
+>>>>>>> 10a4d81ddd268d71c3c395eab72e3b94bfdd4abb
+=======
+>>>>>>> 10a4d81ddd268d71c3c395eab72e3b94bfdd4abb
 
 
     </application>
