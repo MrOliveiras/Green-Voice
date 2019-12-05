@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sobre"
+                android:textSize="40dp"
+                android:layout_gravity="center"
+                />
+
+        <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/sobre"
+                android:layout_gravity="center_horizontal"
+                />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Este é um aplicativo com intuito meramente acdêmico, desenvolvido para avaliação na disciplina de Programação Mobile do curso de Informática do Instituto Federal de Alagoas (IFAL) - Campus Arapiraca, pelos seguintes alunos: "
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alisson José\nGabriel Carlos\nHenrick Oliveira\nRenato Alves"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repositório do projeto:"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+        <TextView
+                android:id="@+id/link_repositorio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/link_repositorio"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+    </LinearLayout>
+
+</ScrollView>
