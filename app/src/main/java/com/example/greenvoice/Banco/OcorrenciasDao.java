@@ -5,14 +5,14 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import com.example.greenvoice.Contatos.Ocorrencias;
 
-public class OcorrenciasDao{
+public class OcorrenciasDao {
 
 
-    private ConexaoUser conn;
+    private ConexaoUsuario conn;
     private String TABLE = "OCORRENCIAS";
 
     public OcorrenciasDao(Context context) {
-        conn = new ConexaoUser(context);
+        conn = new ConexaoUsuario(context);
     }
 
     public void salvar(Ocorrencias ocorrencias) {
@@ -43,13 +43,11 @@ public class OcorrenciasDao{
 
             dadosDaOcorrencia.put("TITULO", ocorrencias.getTitulo());
             dadosDaOcorrencia.put("DESCRICAO", ocorrencias.getDescricao());
-            dadosDaOcorrencia.put("TIPO_DE_OCORRENCIA", ocorrencias.getCategoria_da_ocorrencia());
+            dadosDaOcorrencia.put("TIPO_DE_OCORRENCIA", ocorrencias.getTipo_de_ocorrencia());
             dadosDaOcorrencia.put("IMG_DA_OCORRENCIA", ocorrencias.getImg_da_ocorrencia());
             dadosDaOcorrencia.put("CIDADE", ocorrencias.getCidade());
             dadosDaOcorrencia.put("UF", ocorrencias.getUf());
             dadosDaOcorrencia.put("CEP", ocorrencias.getCep());
-            dadosDaOcorrencia.put("DATA", ocorrencias.getData());
-            dadosDaOcorrencia.put("HORA", ocorrencias.getHora());
 
         return dadosDaOcorrencia;
     }

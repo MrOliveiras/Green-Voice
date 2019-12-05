@@ -24,7 +24,7 @@
         <activity android:name=".Telas.AddUserActivity" />
         <activity android:name=".Telas.AddOcorrenciaActivity" />
         <activity android:name=".Telas.ListaDeOcorrenciasActivity" />
-        <activity android:name=".Telas.ActivityAnonimo" />
+        <activity android:name=".Telas.Activity_opcao_ma" />
         <activity android:name=".Telas.ActivitySobre" />
         <activity android:name=".Telas.ActivityContate" />
 

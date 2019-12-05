@@ -3,6 +3,7 @@ package com.example.greenvoice.Telas;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -63,24 +64,33 @@ public class AddUserActivity extends AppCompatActivity {
                 UsuarioDao dao = new UsuarioDao(AddUserActivity.this);
 
                 Intent intent = getIntent();
-                if(intent.hasExtra("usuario")) {
-                    novoUsuario.setCodUsuario(usuario.getCodUsuario());
 
-                    dao.atualizar(novoUsuario);
+                if(!nomeCompleto.equals("") && !email_de_usuario.equals("")&&!nome_de_usuario.equals("") && !telefone_de_usuario.equals("")&&!senha_de_usuario.equals("")) {
 
-                    System.out.println(novoUsuario.getCodUsuario()  + " " + novoUsuario.toString());
+                    if (intent.hasExtra("usuario")) {
+                        novoUsuario.setCodUsuario(usuario.getCodUsuario());
 
-                } else {
-                    dao.salvar(novoUsuario);
+                        dao.atualizar(novoUsuario);
+
+                        System.out.println(novoUsuario.getCodUsuario() + " " + novoUsuario.toString());
+
+                    } else {
+                        dao.salvar(novoUsuario);
+                    }
+
+                    Toast.makeText(AddUserActivity.this,  "Tudo preenchido!!", Toast.LENGTH_SHORT).show();
+
+                    Intent i = new Intent(AddUserActivity.this, MainActivity.class);
+                    startActivity(i);
+                    Toast.makeText(AddUserActivity.this, "Cadastro Concluído, agora faça login para acessar!!", Toast.LENGTH_SHORT).show();
+
+
+                    finish();
+                } else{
+
+                    Toast.makeText(AddUserActivity.this,  "Preencha todos os campos!!", Toast.LENGTH_SHORT).show();
+
                 }
-
-                finish();
-
-                Toast.makeText(AddUserActivity.this, "Usuário cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(AddUserActivity.this, MainActivity.class);
-                 startActivity(i);
-
-
             }
         });
     }

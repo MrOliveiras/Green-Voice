@@ -32,7 +32,7 @@ public class ActivityOpcao  extends AppCompatActivity {
             }
         });
 
-        CardView cvAvalie = findViewById(R.id.cvAvalie);
+        /*CardView cvAvalie = findViewById(R.id.cvAvalie);
         cvAvalie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +40,8 @@ public class ActivityOpcao  extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        */
+
         CardView cvContate = findViewById(R.id.cvContate);
         cvContate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,5 +59,6 @@ public class ActivityOpcao  extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
     }
 }

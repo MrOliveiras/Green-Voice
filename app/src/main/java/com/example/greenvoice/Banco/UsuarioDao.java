@@ -2,23 +2,33 @@ package com.example.greenvoice.Banco;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+
+
 import com.example.greenvoice.Contatos.Usuario;
+
+import java.util.ArrayList;
 
 public class UsuarioDao {
 
-    private ConexaoUser conn;
+    private ConexaoUsuario conn;
     private String TABLE = "USUARIO";
 
     public UsuarioDao(Context context) {
-        conn = new ConexaoUser(context);
+        conn = new ConexaoUsuario(context);
     }
 
     public void salvar(Usuario usuario) {
-        SQLiteDatabase db = conn.getWritableDatabase(); //Metodo para abrir uma conexao
-        ContentValues dados = preencherDados(usuario);
+        SQLiteDatabase db = conn.getWritableDatabase();
+        try {
+            ContentValues dados = preencherDados(usuario);
 
-        db.insert(TABLE, null, dados);
+            db.insert(TABLE, null, dados);
+        }
+        catch(SQLiteException e) {
+        }
         db.close();
     }
 
@@ -42,5 +52,55 @@ public class UsuarioDao {
         dados.put("SENHA_DE_USUARIO", usuario.getSenha());
 
         return dados;
+    }
+    public ArrayList<Usuario> recuperarTudo() {
+        ArrayList<Usuario> usuarios = new ArrayList<>();
+
+        try {
+            Cursor cursor = conn.getWritableDatabase().rawQuery("SELECT * FROM USUARIO;", null);
+
+            while(cursor.moveToNext()) {
+                usuarios.add(new Usuario(
+                        cursor.getString(cursor.getColumnIndex("NOME_COMPLETO")),
+                        cursor.getInt(cursor.getColumnIndex("ID")),
+                        cursor.getString(cursor.getColumnIndex("NOME_DE_USUARIO")),
+                        cursor.getString(cursor.getColumnIndex("TELEFONE")),
+                        cursor.getString(cursor.getColumnIndex("EMAIL_DE_USUARIO")),
+                        cursor.getString(cursor.getColumnIndex("SENHA_DE_USUARIO"))
+                ));
+
+            }
+        }
+        catch(SQLiteException e) {
+
+        }
+
+        return usuarios;
+    }
+
+
+    public Usuario recuperarUsuario(String usuario, String senha) {
+        Usuario usu = null;
+
+        try {
+            String[] argumentos = { usuario, senha };
+            Cursor cursor = conn.getWritableDatabase().rawQuery("SELECT * FROM USUARIO WHERE NOME_DE_USUARIO=? AND SENHA_DE_USUARIO=?", argumentos);
+
+            while(cursor.moveToNext()) {
+                usu = new Usuario(
+                        cursor.getString(cursor.getColumnIndex("NOME_COMPLETO")),
+                        cursor.getInt(cursor.getColumnIndex("ID")),
+                        cursor.getString(cursor.getColumnIndex("NOME_DE_USUARIO")),
+                        cursor.getString(cursor.getColumnIndex("TELEFONE")),
+                        cursor.getString(cursor.getColumnIndex("EMAIL_DE_USUARIO")),
+                        cursor.getString(cursor.getColumnIndex("SENHA_DE_USUARIO"))
+                );
+
+            }
+        }
+        catch(SQLiteException e) {
+        }
+
+        return usu;
     }
 }

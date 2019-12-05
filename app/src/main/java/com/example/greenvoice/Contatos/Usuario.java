@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Usuario implements Serializable {
 
-    private String nomeCompleto;
+    private String NomeCompleto;
     private int codUsuario;
     private String user;
     private String telefone;
@@ -13,11 +13,11 @@ public class Usuario implements Serializable {
 
 
     public String getNomeCompleto() {
-        return nomeCompleto;
+        return NomeCompleto;
     }
 
     public void setNomeCompleto(String nomeCompleto) {
-        nomeCompleto = nomeCompleto;
+        NomeCompleto = nomeCompleto;
     }
 
     public int getCodUsuario() {
@@ -61,8 +61,17 @@ public class Usuario implements Serializable {
     }
 
     public Usuario(String nomeCompleto, int codUsuario, String user, String telefone, String email, String senha) {
-        this.nomeCompleto = nomeCompleto;
+        NomeCompleto = nomeCompleto;
         this.codUsuario = codUsuario;
+        this.user = user;
+        this.telefone = telefone;
+        this.email = email;
+        this.senha = senha;
+    }
+
+    public Usuario(String nomeCompleto, String user, String telefone, String email, String senha) {
+        NomeCompleto = nomeCompleto;
+        this.codUsuario = 0;
         this.user = user;
         this.telefone = telefone;
         this.email = email;
@@ -72,7 +81,7 @@ public class Usuario implements Serializable {
     @Override
     public String toString() {
         return "Usuario{" +
-                "NomeCompleto='" + nomeCompleto + '\'' +
+                "NomeCompleto='" + NomeCompleto + '\'' +
                 ", codUsuario=" + codUsuario +
                 ", user='" + user + '\'' +
                 ", telefone='" + telefone + '\'' +
