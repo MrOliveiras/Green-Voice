@@ -1,4 +1,4 @@
-package com.example.greenvoice.Contatos;
+package com.example.greenvoice.Model;
 
 import java.io.Serializable;
 

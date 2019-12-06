@@ -91,24 +91,17 @@
                 android:layout_height="25dp"/>
 
         <ImageView
-<<<<<<< HEAD
                 android:id="@+id/imagem_evidencia"
-=======
-                android:id="@+id/imagem_evidência"
->>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
                 android:src="@drawable/ic_image_black_24dp"
                 android:scaleType="centerCrop"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="300dp"
                 android:layout_height="300dp"/>
 
-<<<<<<< HEAD
         <View
             android:layout_width="match_parent"
             android:layout_height="25dp"/>
 
-=======
->>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
         <Button
                 android:id="@+id/botaoEscolherImagem"
                 android:text="Escolher imagem"
@@ -198,7 +191,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="25dp"/>
 
-<<<<<<< HEAD
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -237,8 +229,6 @@
             android:layout_width="match_parent"
             android:layout_height="25dp"/>
 
-=======
->>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
         <Button
                 android:id="@+id/botaoEnviarDenuncia"
                 android:text="Enviar denúncia"

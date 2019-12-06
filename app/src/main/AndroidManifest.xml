@@ -3,10 +3,7 @@
     package="com.example.greenvoice" >
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET" />
-=======
->>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
 
     <application
         android:allowBackup="true"
@@ -31,7 +28,6 @@
         <activity android:name=".Telas.Activity_opcao_ma" />
         <activity android:name=".Telas.ActivitySobre" />
         <activity android:name=".Telas.ActivityContate" />
-<<<<<<< HEAD
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -41,15 +37,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_provider_paths" />
         </provider>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <activity android:name=".Telas.ActivityMod"/>
-=======
->>>>>>> 10a4d81ddd268d71c3c395eab72e3b94bfdd4abb
-=======
->>>>>>> 10a4d81ddd268d71c3c395eab72e3b94bfdd4abb
->>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
 
 
     </application>

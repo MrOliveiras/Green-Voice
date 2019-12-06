@@ -7,9 +7,9 @@
     >
 
     <ImageView
-        android:id="@+id/item_contato_img"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:id="@+id/item_ocorrencia_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/avatar" />
 
     <LinearLayout
@@ -19,22 +19,24 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/nome_ocorrencia"
+            android:id="@+id/titulo_ocorrencia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nome da ocorrência"
+            android:text="Título da ocorrência"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:layout_marginStart="12dp"/>
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"/>
 
 
         <TextView
-            android:id="@+id/tipo_ocorrencia"
+            android:id="@+id/categoria_ocorrencia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tipo da Ocorrência"
+            android:text="Categoria da Ocorrência"
             android:textSize="18sp"
             android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
             android:layout_marginTop="4dp"/>
 
     </LinearLayout>
@@ -49,8 +51,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/item_contato_endcompleto"
-            android:text="Local"
+            android:id="@+id/cidade_ocorrencia"
+            android:text="Cidade"
             android:textSize="21sp"
             android:layout_marginTop="8dp"
             />
@@ -58,8 +60,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/item_contato_cep"
-            android:text="Hora"
+            android:id="@+id/data_ocorrencia"
+            android:text="Data"
             android:textSize="21sp"
             android:layout_marginTop="4dp"/>
     </LinearLayout>

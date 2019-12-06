@@ -7,21 +7,22 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 
 
-import com.example.greenvoice.Contatos.Usuario;
+import com.example.greenvoice.Model.Usuario;
 
 import java.util.ArrayList;
 
-public class UsuarioDao {
+public class UsuarioDao extends Conexao {
 
-    private ConexaoUsuario conn;
+    private Context context;
     private String TABLE = "USUARIO";
 
     public UsuarioDao(Context context) {
-        conn = new ConexaoUsuario(context);
+        super(context);
+        this.context = context;
     }
 
     public void salvar(Usuario usuario) {
-        SQLiteDatabase db = conn.getWritableDatabase();
+        SQLiteDatabase db = getWritableDatabase();
         try {
             ContentValues dados = preencherDados(usuario);
 
@@ -34,7 +35,7 @@ public class UsuarioDao {
 
 
     public void atualizar(Usuario usuario) {
-        SQLiteDatabase db = conn.getWritableDatabase();
+        SQLiteDatabase db = getWritableDatabase();
         ContentValues dados = preencherDados(usuario);
         String[] param = {String.valueOf(usuario.getCodUsuario())};
 
@@ -57,7 +58,7 @@ public class UsuarioDao {
         ArrayList<Usuario> usuarios = new ArrayList<>();
 
         try {
-            Cursor cursor = conn.getWritableDatabase().rawQuery("SELECT * FROM USUARIO;", null);
+            Cursor cursor = getWritableDatabase().rawQuery("SELECT * FROM USUARIO;", null);
 
             while(cursor.moveToNext()) {
                 usuarios.add(new Usuario(
@@ -84,7 +85,7 @@ public class UsuarioDao {
 
         try {
             String[] argumentos = { usuario, senha };
-            Cursor cursor = conn.getWritableDatabase().rawQuery("SELECT * FROM USUARIO WHERE NOME_DE_USUARIO=? AND SENHA_DE_USUARIO=?", argumentos);
+            Cursor cursor = getWritableDatabase().rawQuery("SELECT * FROM USUARIO WHERE NOME_DE_USUARIO=? AND SENHA_DE_USUARIO=?", argumentos);
 
             while(cursor.moveToNext()) {
                 usu = new Usuario(

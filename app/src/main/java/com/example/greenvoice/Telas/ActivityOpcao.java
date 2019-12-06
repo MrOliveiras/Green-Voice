@@ -59,28 +59,6 @@ public class ActivityOpcao  extends AppCompatActivity {
                 startActivity(i);
             }
         });
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-        CardView cvMod = findViewById(R.id.cvMod);
-        cvMod.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(ActivityOpcao.this, ActivityMod.class);
-                startActivity(i);
-            }
-        });
-=======
->>>>>>> 10a4d81ddd268d71c3c395eab72e3b94bfdd4abb
-=======
->>>>>>> 10a4d81ddd268d71c3c395eab72e3b94bfdd4abb
->>>>>>> 47c152c742da40bba02304657292920cd2953410
->>>>>>> a88d9ad5a56b8607e5682fbea35fbf0265ef6e2e
     }
 }
